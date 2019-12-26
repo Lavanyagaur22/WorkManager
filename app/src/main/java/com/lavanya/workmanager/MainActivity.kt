@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         /*Setting up different constraints on the work request.
          */
         val constraints = Constraints.Builder().apply {
-            setRequiredNetworkType(NetworkType.UNMETERED)
+            setRequiredNetworkType(NetworkType.CONNECTED)
             setRequiresCharging(true)
             setRequiresDeviceIdle(false)
             setRequiresStorageNotLow(true)
