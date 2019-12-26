@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WorkManager</string>
+    <string name="schedule_a_notification">Schedule a notification</string>
 </resources>
