@@ -7,6 +7,7 @@ import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.work.*
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +28,9 @@ class MainActivity : AppCompatActivity() {
 
         /*For scheduling a one time work request.
          */
-        scheduleTask()
+        button.setOnClickListener {
+            scheduleTask()
+        }
 
         /*For scheduling a periodic time work request.
         */
